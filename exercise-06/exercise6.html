@@ -3,7 +3,21 @@
   <body>
     <h1>Exercise 6</h1>
     <script>
-
+      for (i=1; i <= 100; i++){
+        if (i % 15 == 0)
+          // We know i is divisible by both 3 and 5 because 3*5 = 15
+          console.log("fizzbuzz");
+        else if (i % 5 == 0)
+          // We know i is NOT divisible by both 3 and 5, but only 5
+          console.log("buzz");
+        else if (i % 3 == 0)
+          // We know i is NOT divisible by both 3 and 5
+          // We know i is NOT divisible by 5, but only 3 
+          console.log("fizz");
+          // We know i is NOT divisible by 3 and/or 5
+        else
+          console.log(i)
+      }
     </script>
   </body>
 </html>

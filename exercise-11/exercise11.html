@@ -8,6 +8,16 @@
 
       // Write your code here
 
+      for(var i = 0; i < groceries.length; i++){
+        if(groceries[i].price >= 10){
+          // This grocery item is more than $10 - Expensive
+          groceries[i].cheap = false;
+        } else {
+          // This grocery item is less than $10 - Cheap
+          groceries[i].cheap = true;
+        }
+      }
+      console.log(groceries);
     </script>
   </body>
 </html>

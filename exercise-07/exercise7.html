@@ -3,7 +3,36 @@
   <body>
     <h1>Exercise 7</h1>
     <script>
-
+      var chess = ""
+      var size = 8
+      var c;
+      for(var i = 0; i < size; i++) {
+        c=i%2 ? "# " : " #"
+         for(var j = 0; j < size/2; j++){
+          chess += c;
+         }
+         chess += "\n"
+      };
+      console.log(chess)
+    </script>
+    <script>
+      var board = "", size = 8;
+      // You can define multiple variables on one line as long as you separate them with a column and end with semi-colon
+      for(var row = 0; row < size; row++){
+        var rowContent = "";
+        for(var column = 0; column < size; column++){
+          if((row + column) % 2 === 0){
+            // We know we are to place a space, because we are at an even position on the board
+            rowContent += "";
+          } else {
+            // We know we are to place a pound sign, because we are at an odd position on the board
+            rowContent += "#";
+          }
+        }
+        board += rowContent + "\n";
+      }
+      console.log(board);
+      // He did this before even starting the for() because he knew this is the end result
     </script>
   </body>
 </html>

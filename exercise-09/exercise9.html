@@ -4,7 +4,21 @@
     <h1>Exercise 9</h1>
     <script>
       var grades = [44, 94, 95, 72, 89, 70, 99, 83];
-      // Write your code here
+        for (var i = 0; i < grades.length; i++) {
+          if(grades[i] > 95){
+            console.log(grades[i] + "= A");
+          }else if(grades[i] < 95 && grades[i] > 87){
+            console.log(grades[i] + "= B");
+          }else if(grades[i] < 88 && grades[i] > 79){
+            console.log(grades[i] + "= C");
+          }else if(grades[i] < 80 && grades[i] > 71){
+            console.log(grades[i] + "= D");
+          }else if(grades[i] < 72 && grades[i] > 64){
+            console.log(grades[i] + "= E");
+          }else if(grades[i] < 65){
+            console.log(grades[i] + "= F")
+          }
+        };
     </script>
   </body>
 </html>
